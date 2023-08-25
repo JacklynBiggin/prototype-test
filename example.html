@@ -1,1 +1,16 @@
-<p>This is some content!</p>
+<p id="question">Click the button!!</p>
+
+<button onclick="chooserandom()">Choose random</button>
+
+<script>
+  function chooseRandom() {
+      let data = ["What is the meaning of life?",
+       "Why is the color red, red?",
+       "Are you cool?",
+       "Does cheese taste good?"]
+  }
+
+  const randomElement = array[Math.floor(Math.random() * array.length)];
+
+  document.getElementById("question").innerHTML = randomElement
+</script>
